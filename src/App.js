@@ -1,3 +1,4 @@
+// import { render } from '@testing-library/react';
 import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
@@ -5,15 +6,17 @@ import Navigation from './components/Navigation/Navigation';
 // import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 // import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 
-function App() {
-  return (
-    <div className="App">
-      <Navigation />
-      {/* <Logo />
-      <ImageLinkForm />
-      <FaceRecognition /> */}
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Navigation />
+        {/* <Logo />
+        <ImageLinkForm />
+        <FaceRecognition /> */}
+      </div>
+    );
+  }
 }
 
 export default App;
