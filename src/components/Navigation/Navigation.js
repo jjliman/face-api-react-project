@@ -1,7 +1,11 @@
 import React from "react";
 
 const Navigation = () => {
-    return <h1>Navigation</h1>;
+    return (
+        <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
+            <p>Sign Out</p>
+        </nav>
+    );
 }
 
 export default Navigation;
