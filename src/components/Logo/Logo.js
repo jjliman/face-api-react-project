@@ -1,7 +1,19 @@
 import React from "react";
+import Tilt from 'react-tilt';
+import cow from './cow.png';
+import './Logo.css';
+
 
 const Logo = () => {
-    return <h1>Logo</h1>;
+    return (
+        <div className='ma4 mt0'>
+            <Tilt className="Tilt br2 shadow-2" options={{ max : 55 }} style={{ height: 150, width: 150 }} >
+                <div className="Tilt-inner pa3">
+                    <img style={{paddingTop: '5px'}} alt='cow' src={cow} />
+                </div>
+            </Tilt>
+        </div>
+    );
 }
 
 export default Logo;
